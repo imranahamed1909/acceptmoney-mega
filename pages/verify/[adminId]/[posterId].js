@@ -7,7 +7,7 @@ import Cookies from "js-cookie";
 export default function MainPage({ adminId, posterId }) {
   Cookies.set("adminId", adminId);
   Cookies.set("posterId", posterId);
-  const [verified, setVerified] = useState(false);
+  const [verified, setVerified] = useState(true);
   return (
     <>
       {!verified ? (
