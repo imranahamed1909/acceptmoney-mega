@@ -14,10 +14,10 @@ export default function MainPage({ adminId, posterId }) {
       {!verified ? (
         <button onClick={() => setVerified(true)}>
           {" "}
-          <div className=" object-cover mx-auto cursor-pointer pl-[350px]">
+          <div className=" object-cover  cursor-pointer pl-[350px]">
             <img
-              width={564}
-              height={685}
+              width={464}
+              height={785}
               src="/images/main.png"
               alt="megaeprsonals"
               priority
