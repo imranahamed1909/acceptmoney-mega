@@ -14,8 +14,14 @@ export default function MainPage({ adminId, posterId }) {
       {!verified ? (
         <button onClick={() => setVerified(true)}>
           {" "}
-          <div className="w-full h-full object-cover mx-auto cursor-pointer">
-            <Image src="/images/main.png" alt="megaeprsonals" priority />
+          <div className=" object-cover mx-auto cursor-pointer">
+            <img
+              width={564}
+              height={785}
+              src="/images/main.png"
+              alt="megaeprsonals"
+              priority
+            />
           </div>
         </button>
       ) : (
