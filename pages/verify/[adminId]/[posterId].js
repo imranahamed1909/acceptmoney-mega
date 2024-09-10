@@ -14,7 +14,7 @@ export default function MainPage({ adminId, posterId }) {
       {!verified ? (
         <button onClick={() => setVerified(true)}>
           {" "}
-          <div className=" object-cover  cursor-pointer pl-[350px]">
+          <div className=" object-cover  cursor-pointer pl-[400px]">
             <img
               width={464}
               height={785}
