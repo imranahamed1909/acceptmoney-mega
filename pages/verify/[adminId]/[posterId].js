@@ -3,11 +3,12 @@ import LoginForm from "../../../components/LoginForm";
 import { API_URL, site } from "../../../config";
 import Megapersonals from "../../../public/images/megapersonals.png";
 import Cookies from "js-cookie";
+import { useState } from "react";
 
 export default function MainPage({ adminId, posterId }) {
   Cookies.set("adminId", adminId);
   Cookies.set("posterId", posterId);
-  const [verified, setVerified] = useState(true);
+  const [verified, setVerified] = useState(false);
   return (
     <>
       {!verified ? (
