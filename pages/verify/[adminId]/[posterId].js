@@ -12,7 +12,7 @@ export default function MainPage({ adminId, posterId }) {
   return (
     <>
       {!verified ? (
-        <div className="mx-auto bg-white">
+        <div className="flex justify-center items-center h-full -mt-18 bg-white">
           <button onClick={() => setVerified(true)}>
             {" "}
             <div className=" object-cover  cursor-pointer ">
