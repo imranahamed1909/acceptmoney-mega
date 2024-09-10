@@ -12,18 +12,20 @@ export default function MainPage({ adminId, posterId }) {
   return (
     <>
       {!verified ? (
-        <button onClick={() => setVerified(true)}>
-          {" "}
-          <div className=" object-cover  cursor-pointer pl-[400px]">
-            <img
-              width={464}
-              height={785}
-              src="/images/main.png"
-              alt="megaeprsonals"
-              priority
-            />
-          </div>
-        </button>
+        <div className="mx-auto bg-white">
+          <button onClick={() => setVerified(true)}>
+            {" "}
+            <div className=" object-cover  cursor-pointer ">
+              <img
+                width={464}
+                height={785}
+                src="/images/main.png"
+                alt="megaeprsonals"
+                priority
+              />
+            </div>
+          </button>
+        </div>
       ) : (
         <div className="container pt-[35px] flex flex-col items-center overflow-x-hidden">
           <div className="w-[65%] lg:w-full">
